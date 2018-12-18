@@ -1,4 +1,5 @@
 Rails.application.routes.draw do
+  default_url_options :host => "example.com"
   root   'static_pages#home'
   get    '/help',    to: 'static_pages#help'
   get    '/about',   to: 'static_pages#about'
